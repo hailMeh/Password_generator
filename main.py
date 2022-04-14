@@ -9,3 +9,13 @@ for p in list_of_keywords:
         password.extend(new_symbol)
 
 print(''.join(password))
+
+
+# def make_password(jij):
+    list_of_keywords = list(jij)  # my_keywords.split('')
+    password = []
+    for p in list_of_keywords:
+        if len(password) <= 12:
+            new_symbol = random.choice(list_of_keywords)
+            password.extend(new_symbol)
+    return ''.join(password)
